@@ -589,7 +589,7 @@ bounding distributions over a given run via::
     for i, a in enumerate(axes.flatten()):
         it = int((i+1) * res2.niter / 8.)
         # overplot the result onto each subplot
-        temp = dyplot.bountplot(res2, dims=(0, 1), it=it, 
+        temp = dyplot.boundplot(res2, dims=(0, 1), it=it, 
                                 prior_transform=prior_transform,
                                 show_live=True, max_n_ticks=3,
                                 span=[(-10, 10), (-10, 10)], fig=(fig, a))
